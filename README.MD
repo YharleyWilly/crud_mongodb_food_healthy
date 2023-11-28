@@ -49,9 +49,9 @@ Exemplo de criação de um documento no Mongo:
       cpf = input("CPF (Novo): ")
       # Solicita ao usuario o novo nome
       nome = input("Nome (Novo): ")
-      # Solicita ao usuario o novo nome
+      # Solicita ao usuario o novo telefone
       telefone = input("Telefone (Novo): ")
-      # Solicita ao usuario o novo nome
+      # Solicita ao usuario o novo email
       email = input("Email (Novo): ")
 
 
