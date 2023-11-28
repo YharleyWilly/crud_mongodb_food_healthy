@@ -58,7 +58,7 @@ Exemplo de criação de um documento no Mongo:
       # Insere e persiste o novo cliente
       mongo.db["clientes"].insert_one({"cpf_cliente": cpf, "nome_cliente": nome, "telefone_cliente": telefone, "email_cliente": email})
       # Recupera os dados do novo cliente criado transformando em um DataFrame
-      df_cliente = pd.DataFrame(list(mongo.db["clientes"].find({"cpf":f"{cpf_cliente}"}, {"cpf_cliente": 1, "nome_cliente": 1, "telefone_cliente": 1, "email_cliete": 1, _id": 0})))
+      df_cliente = pd.DataFrame(list(mongo.db["clientes"].find({"cpf_cliente":f"{cpf}"}, {"cpf_cliente": 1, "nome_cliente": 1, "telefone_cliente": 1, "email_cliente": 1, _id": 0})))
       # Exibe os dados do cliente em formato DataFrame
       print(df_cliente)
 
